@@ -1,0 +1,15 @@
+[
+  {
+    "tax": 199,
+    "shippingFee": 299,
+    "items": [
+      {
+        "name": "couch",
+        "price": 99,
+        "image": "uploads/couch.jpg",
+        "amount": 12,
+        "product": "635cfae4d6d99989a6542950"
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "couch",
+    "price": 99,
+    "image": "uploads/couch.jpg",
+    "colors": ["black", "white"],
+    "company": "walmart",
+    "description": "Comfy couch to chill while watching your favorite TV shows",
+    "category": "home"
+  }
+]
