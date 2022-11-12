@@ -8419,14 +8419,14 @@
                         </ul>
                     <li><strong><a href=#Product>Product</a></strong>
                         <ul>
+                            <li><a class=endpoint_menu href=#jump-Product-CreateProduct>Create Product</a>
                             <li><a class=endpoint_menu href=#jump-Product-GetAllProducts>Get All Products</a>
                             <li><a class=endpoint_menu href=#jump-Product-GetSingleProduct>Get Single Product</a>
-                            <li><a class=endpoint_menu href=#jump-Product-CreateProduct>Create Product</a>
-                            <li><a class=endpoint_menu href=#jump-Product-UpdateProduct>Update Product</a>
-                            <li><a class=endpoint_menu href=#jump-Product-DeleteProduct>Delete Product</a>
                             <li><a class=endpoint_menu href=#jump-Product-GetSingleProductReviews>Get Single Product
                                     Reviews</a>
+                            <li><a class=endpoint_menu href=#jump-Product-UpdateProduct>Update Product</a>
                             <li><a class=endpoint_menu href=#jump-Product-UploadProductImage>Upload Product Image</a>
+                            <li><a class=endpoint_menu href=#jump-Product-DeleteProduct>Delete Product</a>
                         </ul>
                     <li><strong><a href=#Reviews>Reviews</a></strong>
                         <ul>
@@ -8465,7 +8465,7 @@
                                                 &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/auth/signup
+                                                https://ecom-api.up.railway.app/api/auth/signup
                                             </h4>
                                         </a>
                                     </div>
@@ -8489,12 +8489,18 @@
                                                 &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/auth/login
+                                                https://ecom-api.up.railway.app/api/auth/login
                                             </h4>
                                         </a>
                                     </div>
                                     <div id=collapse-Auth-Login class="panel-collapse collapse">
-                                        <div class=panel-body></div>
+                                        <div class=panel-body>
+                                            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+                                                &#34;email&#34;: &#34;diana@gg.com&#34;,
+                                                &#34;password&#34;:&#34;dianadiana&#34;
+                                                }</span>
+                                            <div class=clearfix></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="panel panel-info" id=jump-Auth-Logout>
@@ -8506,7 +8512,7 @@
                                                 &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/auth/logout
+                                                https://ecom-api.up.railway.app/api/auth/logout
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Auth-Logout class="panel-collapse collapse">
@@ -8536,7 +8542,7 @@
                                                     Users</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/users
+                                                https://ecom-api.up.railway.app/api/users
                                             </h4>
                                         </a></div>
                                     <div id=collapse-User-GetAllUsers class="panel-collapse collapse">
@@ -8552,7 +8558,7 @@
                                                     User</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/users/{userId}
+                                                https://ecom-api.up.railway.app/api/users/{userId}
                                             </h4>
                                         </a></div>
                                     <div id=collapse-User-GetSingleUser class="panel-collapse collapse">
@@ -8568,7 +8574,7 @@
                                                 &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/users/showMe
+                                                https://ecom-api.up.railway.app/api/users/showMe
                                             </h4>
                                         </a></div>
                                     <div id=collapse-User-ShowMe class="panel-collapse collapse">
@@ -8584,7 +8590,7 @@
                                                 &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/users/updateUser
+                                                https://ecom-api.up.railway.app/api/users/updateUser
                                             </h4>
                                         </a>
                                     </div>
@@ -8607,7 +8613,7 @@
                                                     Password</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/users/updateUserPassword
+                                                https://ecom-api.up.railway.app/api/users/updateUserPassword
                                             </h4>
                                         </a>
                                     </div>
@@ -8635,6 +8641,23 @@
                         <p>
                         <div class=request-item>
                             <div class=panel-group id=accordion-Product>
+                                <div class="panel panel-success" id=jump-Product-CreateProduct>
+                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
+                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Product
+                                            href=#collapse-Product-CreateProduct>
+                                            <h4 class=panel-title><span
+                                                    class="glyphicon glyphicon-plus"></span><strong>Create
+                                                    Product</strong> &nbsp;|&nbsp;
+                                                <strong class="request-method border-success">POST</strong>
+                                                &nbsp;
+                                                https://ecom-api.up.railway.app/api/products
+                                            </h4>
+                                        </a>
+                                    </div>
+                                    <div id=collapse-Product-CreateProduct class="panel-collapse collapse">
+                                        <div class=panel-body></div>
+                                    </div>
+                                </div>
                                 <div class="panel panel-info" id=jump-Product-GetAllProducts>
                                     <div class=panel-heading><small class="pull-right text-muted"></small><a
                                             class=text-info data-toggle=collapse data-parent=#accordion-Product
@@ -8644,7 +8667,7 @@
                                                     Products</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/products
+                                                https://ecom-api.up.railway.app/api/products
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Product-GetAllProducts class="panel-collapse collapse">
@@ -8660,60 +8683,10 @@
                                                     Product</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/products/{productId}
+                                                https://ecom-api.up.railway.app/api/products/{productId}
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Product-GetSingleProduct class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-success" id=jump-Product-CreateProduct>
-                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
-                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Product
-                                            href=#collapse-Product-CreateProduct>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Create
-                                                    Product</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-success">POST</strong>
-                                                &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/products
-                                            </h4>
-                                        </a>
-                                    </div>
-                                    <div id=collapse-Product-CreateProduct class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-warning" id=jump-Product-UpdateProduct>
-                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
-                                        <a class=text-warning data-toggle=collapse data-parent=#accordion-Product
-                                            href=#collapse-Product-UpdateProduct>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Update
-                                                    Product</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-warning">PATCH</strong>
-                                                &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/products/{productId}
-                                            </h4>
-                                        </a>
-                                    </div>
-                                    <div id=collapse-Product-UpdateProduct class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-danger" id=jump-Product-DeleteProduct>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-danger data-toggle=collapse data-parent=#accordion-Product
-                                            href=#collapse-Product-DeleteProduct>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Delete
-                                                    Product</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-danger">DELETE</strong>
-                                                &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/products/{productId}
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Product-DeleteProduct class="panel-collapse collapse">
                                         <div class=panel-body></div>
                                     </div>
                                 </div>
@@ -8726,10 +8699,27 @@
                                                     Reviews</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/products/{productId}/reviews
+                                                https://ecom-api.up.railway.app/api/products/{productId}/reviews
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Product-GetSingleProductReviews class="panel-collapse collapse">
+                                        <div class=panel-body></div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-warning" id=jump-Product-UpdateProduct>
+                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
+                                        <a class=text-warning data-toggle=collapse data-parent=#accordion-Product
+                                            href=#collapse-Product-UpdateProduct>
+                                            <h4 class=panel-title><span
+                                                    class="glyphicon glyphicon-plus"></span><strong>Update
+                                                    Product</strong> &nbsp;|&nbsp;
+                                                <strong class="request-method border-warning">PATCH</strong>
+                                                &nbsp;
+                                                https://ecom-api.up.railway.app/api/products/{productId}
+                                            </h4>
+                                        </a>
+                                    </div>
+                                    <div id=collapse-Product-UpdateProduct class="panel-collapse collapse">
                                         <div class=panel-body></div>
                                     </div>
                                 </div>
@@ -8742,7 +8732,7 @@
                                                     Image</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/products/uploadImage
+                                                https://ecom-api.up.railway.app/api/products/uploadImage
                                             </h4>
                                         </a>
                                     </div>
@@ -8762,6 +8752,22 @@
                                                         <td>
                                             </table>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-danger" id=jump-Product-DeleteProduct>
+                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
+                                            class=text-danger data-toggle=collapse data-parent=#accordion-Product
+                                            href=#collapse-Product-DeleteProduct>
+                                            <h4 class=panel-title><span
+                                                    class="glyphicon glyphicon-plus"></span><strong>Delete
+                                                    Product</strong> &nbsp;|&nbsp;
+                                                <strong class="request-method border-danger">DELETE</strong>
+                                                &nbsp;
+                                                https://ecom-api.up.railway.app/api/products/{productId}
+                                            </h4>
+                                        </a></div>
+                                    <div id=collapse-Product-DeleteProduct class="panel-collapse collapse">
+                                        <div class=panel-body></div>
                                     </div>
                                 </div>
                             </div>
@@ -8787,7 +8793,7 @@
                                                     Review</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/reviews/{productId}
+                                                https://ecom-api.up.railway.app/api/reviews/{productId}
                                             </h4>
                                         </a>
                                     </div>
@@ -8810,7 +8816,7 @@
                                                     Reviews</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/reviews/{productId}
+                                                https://ecom-api.up.railway.app/api/reviews/{productId}
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Reviews-GetProductReviews class="panel-collapse collapse">
@@ -8826,7 +8832,7 @@
                                                     Review</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-warning">PATCH</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/reviews/{reviewId}
+                                                https://ecom-api.up.railway.app/api/reviews/{reviewId}
                                             </h4>
                                         </a>
                                     </div>
@@ -8849,7 +8855,7 @@
                                                     Review</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-danger">DELETE</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/reviews/{reviewId}
+                                                https://ecom-api.up.railway.app/api/reviews/{reviewId}
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Reviews-DeleteReview class="panel-collapse collapse">
@@ -8871,17 +8877,18 @@
                         <div class=request-item>
                             <div class=panel-group id=accordion-Orders>
                                 <div class="panel panel-success" id=jump-Orders-CreateOrder>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-success data-toggle=collapse data-parent=#accordion-Orders
+                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
+                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Orders
                                             href=#collapse-Orders-CreateOrder>
                                             <h4 class=panel-title><span
                                                     class="glyphicon glyphicon-plus"></span><strong>Create
                                                     Order</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/orders
+                                                https://ecom-api.up.railway.app/api/orders
                                             </h4>
-                                        </a></div>
+                                        </a>
+                                    </div>
                                     <div id=collapse-Orders-CreateOrder class="panel-collapse collapse">
                                         <div class=panel-body></div>
                                     </div>
@@ -8895,7 +8902,7 @@
                                                     Orders</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/orders
+                                                https://ecom-api.up.railway.app/api/orders
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Orders-GetAllOrders class="panel-collapse collapse">
@@ -8911,7 +8918,7 @@
                                                     Order</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/orders/{orderId}
+                                                https://ecom-api.up.railway.app/api/orders/{orderId}
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Orders-GetSingleOrder class="panel-collapse collapse">
@@ -8927,7 +8934,7 @@
                                                     Orders</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/orders/showMyOrders
+                                                https://ecom-api.up.railway.app/api/orders/showMyOrders
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Orders-ShowMyOrders class="panel-collapse collapse">
@@ -8943,7 +8950,7 @@
                                                     Order</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-warning">PATCH</strong>
                                                 &nbsp;
-                                                https://ecom-apiv1.herokuapp.com/api/orders/{orderId}
+                                                https://ecom-api.up.railway.app/api/orders/{orderId}
                                             </h4>
                                         </a></div>
                                     <div id=collapse-Orders-UpdateOrder class="panel-collapse collapse">
@@ -8963,7 +8970,7 @@
         <div class=container-fluid>
             <div class="span12 text-center"><span data-toggle=tooltip
                     title="If the application help you, please feel free to give a star to the project in github. Your star inspire me to work more on open-source projects like this!">Generated
-                    at 2022-10-30 15:00:09 by <a href=https://github.com/thedevsaddam/docgen target=_blank
+                    at 2022-11-12 10:23:09 by <a href=https://github.com/thedevsaddam/docgen target=_blank
                         class=text-muted>docgen</a></span></div>
         </div>
     </footer>
