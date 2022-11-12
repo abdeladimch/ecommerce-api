@@ -12,4 +12,4 @@ Created ecommerce REST API that performs CRUD operations on users, products, ord
 
 ## Deployment:
 
-[Live Site](https://ecom-apiv1.herokuapp.com)
+[Live Site](https://ecom-api.up.railway.app)
